@@ -56,7 +56,7 @@ app.post('/split-payments/compute', (req, res) => {
     for(let i=0;i<ratioSplit.length;i++){
         ratioTotal += Number(ratioSplit[i].SplitValue)
     }
-console.log(currentAmount);
+
 const ratioAmount = currentAmount
     ratioSplit.forEach(split => {
         splitValue = (Number(split.SplitValue)/ratioTotal)*ratioAmount
@@ -71,8 +71,7 @@ const ratioAmount = currentAmount
 
 
 
-console.log(ratioTotal);
-console.log(ratioDetails);
+
     res.status(200).json({ID,Balance:currentAmount,SplitBreakdown:[...percentDetails, ...flatDetails,...ratioDetails]})
 
  })
