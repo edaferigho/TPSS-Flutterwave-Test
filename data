@@ -1,0 +1,32 @@
+{"ID":13092,
+"Amount": 4500,
+"Currency":"NGN",
+"CustomerEmail":"edafem@gmail.com",
+"SplitInfo":[
+    {
+        "SplitType":"FLAT",
+        "SplitValue":450,
+        "SplitEntityId": "LNPYAC0019"
+    },
+     {
+        "SplitType":"PERCENTAGE",
+        "SplitValue":10,
+        "SplitEntityId": "LNPYAC0021"
+    },
+     {
+        "SplitType":"RATIO",
+        "SplitValue":4,
+        "SplitEntityId": "LNPYAC0009"
+    },
+     {
+        "SplitType":"PERCENTAGE",
+        "SplitValue":20,
+        "SplitEntityId": "LNPYAC0022"
+    },
+     {
+        "SplitType":"RATIO",
+        "SplitValue":5,
+        "SplitEntityId": "LNPYAC0002"
+    }
+]
+}
