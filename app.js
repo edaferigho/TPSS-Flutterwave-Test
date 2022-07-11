@@ -75,8 +75,8 @@ const ratioAmount = currentAmount
     res.status(200).json({ID,Balance:currentAmount,SplitBreakdown:[...percentDetails, ...flatDetails,...ratioDetails]})
 
  })
+const PORT = process.env.PORT || 9000
 
-
-app.listen(9000, () => {
-    console.log('listening on http://localhost:9000');
+app.listen(PORT, () => {
+    console.log(`listening on http://localhost:${PORT}`);
 })
