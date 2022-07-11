@@ -73,7 +73,7 @@ const ratioAmount = currentAmount
 
 console.log(ratioTotal);
 console.log(ratioDetails);
-    res.status(200).json({currentAmount, percentDetails, flatDetails})
+    res.status(200).json({ID,Balance:currentAmount,SplitBreakdown:[...percentDetails, ...flatDetails,...ratioDetails]})
 
  })
 
